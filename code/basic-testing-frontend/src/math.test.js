@@ -1,5 +1,3 @@
-// import {test, expect} from 'jest';
-// const { test, expect } = require("jest");
 const {add} = require('./math.js');
 
 describe('should have a function for adding values', () => {

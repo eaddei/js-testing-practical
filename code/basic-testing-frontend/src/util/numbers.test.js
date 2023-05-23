@@ -1,5 +1,3 @@
-// import {test, expect} from 'jest';
-// import { transformToNumber } from './numbers';
 const {transformToNumber} = require('./numbers');
 
 describe('should have a function for transforming values to numbers', () => {
@@ -16,8 +14,4 @@ describe('should have a function for transforming values to numbers', () => {
         expect(result).toBeNaN();
     
     });
-
 });
-
-
-
