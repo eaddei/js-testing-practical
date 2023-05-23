@@ -1,0 +1,23 @@
+{
+  "name": "basic-testing-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "test:watch": "vitest",
+    "start": "http-server -c-1"
+  },
+  "keywords": [],
+  "author": "Ebenezer Addei",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "http-server": "^14.1.0",
+    "install": "^0.13.0",
+    "jest": "^29.5.0",
+    "vitest": "^0.31.1"
+  }
+}

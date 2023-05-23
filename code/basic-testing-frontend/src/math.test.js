@@ -1,5 +1,6 @@
-import {test, expect} from 'vitest';
-import {add} from './math.js';
+// import {test, expect} from 'jest';
+// const { test, expect } = require("jest");
+const {add} = require('./math.js');
 
 test('should summarize all number values in an array', () => {
     // Arrange phase
@@ -7,14 +8,16 @@ test('should summarize all number values in an array', () => {
     // Act phase
     const result = add(numbers);
     // Assert phase
-    const expectedResult = numbers.reduce((prevValue, curValue) => prevValue + curValue, 0); // the reduce method walks thru the array element-by-elemnt then adding current array value to the result fromt he previous step
-    expect(result).toBe(expectedResult);
+
+    expect(result).toBe(15);
+    // const expectedResult = numbers.reduce((prevValue, curValue) => prevValue + curValue, 0); // the reduce method walks thru the array element-by-elemnt then adding current array value to the result fromt he previous step
+    // expect(result).toBe(expectedResult);
 });
 
 test('should yield to NaN if a least one invalid number is provided', () => {
     const inputs = ['invalid', 1];
     const result = add(inputs);
-    expect(result).toBe(NaN);
+    expect(result).toBeNaN();
 });
 
 test('should yield a correct sum if an array of numeric string value is provided', () => {
