@@ -48,5 +48,5 @@ test('should throw an error if provided with multiple arguments instead of an ar
         add(num1, num2);
     };
 
-    expect(resultFunc).toThrow(/is not iterable/); // passing in the "//" is an optional way of providing the expected error message to display
+    expect(resultFunc).toThrow(/is not iterable/); // passing in the "//" is an optional way of providing the expected error message to display 
 });
